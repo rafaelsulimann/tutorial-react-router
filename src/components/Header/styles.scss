@@ -1,0 +1,20 @@
+header{
+    background-color: black;
+    @media(max-width: 960px) {
+        padding: 0px 20px;
+    }
+    .header-container {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        h1 {
+            @media (max-width: 960px){
+                font-size: 24px;
+            }
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32.08px;
+            color: white;
+        }
+    }
+}
