@@ -1,13 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import Header from "./components/Header";
+import Home from "./routes/Home";
 
 export default function App() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Home />
     </>
   );
 }
