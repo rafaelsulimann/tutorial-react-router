@@ -29,3 +29,7 @@ let products = [
   export function getProducts() {
     return products;
   }
+
+  export function getProduct(number: any){
+    return products.find(product => product.number === number);
+  }

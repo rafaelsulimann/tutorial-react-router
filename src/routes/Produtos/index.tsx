@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Header from "../../components/Header";
 import { getProducts } from "../../data";
 import "./styles.scss";
@@ -24,6 +24,7 @@ export default function Produtos() {
         </Link>
       ))}
     </nav>
+    <Outlet />
   </div>
   );
 }
