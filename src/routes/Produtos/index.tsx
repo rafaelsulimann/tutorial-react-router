@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import Header from "../../components/Header";
+import QueryLink from "../../components/QueryLink";
 import { getProducts } from "../../data";
 import "./styles.scss";
 
@@ -33,13 +34,13 @@ export default function Produtos() {
         return productName.startsWith(name.toLowerCase());
       })
       .map((products) => (
-        <NavLink
-          className={({ isActive}) => (isActive ? "nav-link active" : "nav-link non-active")}
+        <QueryLink
+          className={({ isActive}: any) => (isActive ? "nav-link active" : "nav-link non-active")}
           to={`/produtos/${products.number}`}
           key={products.number}
         >
           {products.name}
-        </NavLink>
+        </QueryLink>
       ))}
     </nav>
     <Outlet />
