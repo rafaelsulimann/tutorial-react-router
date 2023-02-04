@@ -4,3 +4,16 @@
     align-items: center;
     justify-content: center;
 }
+
+.nav-link {
+    display: block;
+}
+
+.active {
+    color: red;
+}
+
+.non-active {
+    text-decoration: none;
+    color: blue;
+}
