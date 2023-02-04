@@ -32,4 +32,8 @@ let products = [
 
   export function getProduct(number: any){
     return products.find(product => product.number === number);
+  } 
+
+  export function deleteProduct(number: any){
+    return products = products.filter((product) => product.number !== number);
   }

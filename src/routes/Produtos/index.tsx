@@ -1,5 +1,4 @@
-import { NavLink, Outlet, useSearchParams } from "react-router-dom";
-import Header from "../../components/Header";
+import { Outlet, useSearchParams } from "react-router-dom";
 import QueryLink from "../../components/QueryLink";
 import { getProducts } from "../../data";
 import "./styles.scss";
